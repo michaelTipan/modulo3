@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="serviciosJuego.js" ></script>
+        <script src="juego.js" ></script>
+        <script src="utilitarios.js" ></script>
+        <link rel="stylesheet" href="juego.css">
+    </head>
+    <body>
+        <div>
+            <div class="tituloPrincipal">JUEGA PIEDRA PAPEL O TIJERA</div>
+            <div class="puntajes">
+                <p class="contenedorImagen" id="lblPuntosComputador">COMPUTADOR: 0</p>
+                <p class="contenedorImagen">VS</p>
+                <p class="contenedorImagen" id="lblPuntosUsuario">USUARIO: 0</p>
+            </div>
+            <div class="opc">
+                <div class="contenedorImagen">
+                    <img src="./imagenes/carga.jpg" class="logo" id="imgComputador"/>
+                </div>
+                <div class="palabraVictoria" id="msgResultado"></div>
+                <div class="palabraVictoriaFinal" id="msgResultadoFinal"></div>
+                <div class="contenedorImagen">
+                    <img src="./imagenes/carga.jpg" class="logo" id="imgJugador" />
+                </div>
+            </div>
+            <div class="menuBotones">
+                <div class="boton_palabra">
+                    <p class="palabraImagen" id="lblRoblox">PIEDRA</p>
+                    <div class="botonImagen">
+                        <img id="botonJugar" src="./imagenes/piedra.png" class="logoPiedra" onclick="jugar('piedra');"/>
+                    </div>
+                </div>
+                <div class="boton_palabra">
+                    <p class="palabraImagen" id="lblRoblox">PAPEL</p>
+                    <div class="botonImagen">
+                        <img  id="botonJugar" src="./imagenes/papel.png" class="logoPapel" onclick="jugar('papel');"/>
+                    </div>
+                </div>
+                <div class="boton_palabra">
+                    <p class="palabraImagen" id="lblRoblox">TIJERA</p>
+                    <div class="botonImagen">
+                        <img  id="botonJugar" src="./imagenes/tijera.png" class="logoTijera" onclick="jugar('tijera');"/>
+                    </div>
+                </div>
+                <div class="boton_palabra">
+                    <input class="estiloBoton" type="button" value="NUEVA PARTIDA" onclick="limpiar();">
+                </div>
+            </div>
+        </div>
+    </body>
+    
+</html>
